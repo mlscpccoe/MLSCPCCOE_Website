@@ -73,7 +73,7 @@ function App() {
 					className="absolute w-[100%] h-[100vh] bg-white"
 				/>
 			)}
-			{displayHome && <Events />}
+			{displayHome && <Home />}
 			{/* {displayEvent && <Events />} */}
 
 			{/* <Events /> */}

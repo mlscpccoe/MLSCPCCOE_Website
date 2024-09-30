@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import instagramicon from "../../../public/instagram-grey-outline-22754.png"
 import facebookicon from "../../../public/183973_facebook_social network_logo_icon.png"
+import linkedinicon from "../../../public/linkedin-3-512.png"
+import twittericon from "../../../public/twitter-512.png"
 
 const Home = () => {
     return (
@@ -44,7 +46,12 @@ const Home = () => {
                         <a href="#" target="_blank" rel="noopener noreferrer">
                             <img src={facebookicon} alt="facebook icon" className="w-12"/>
                         </a>
-                        
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src={linkedinicon} alt="linkedin icon" className="w-12"/>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src={twittericon} alt="twitter icon" className="w-12"/>
+                        </a>
                     </div>
                 </div>
             </motion.section>

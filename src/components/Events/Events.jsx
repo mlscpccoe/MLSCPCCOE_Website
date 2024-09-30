@@ -4,7 +4,6 @@ import "./Events.css";
 const Events = () => {
   const scrollContainerRef = useRef(null);
 
-  // Horizontal scroll snapping effect to center the event
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
     if (scrollContainer) {
@@ -26,7 +25,6 @@ const Events = () => {
     }
   }, []);
 
-  // Dummy events data
   const events = [
     {
       id: 1,
@@ -71,10 +69,10 @@ const Events = () => {
         {events.map((event) => (
           <div
             key={event.id}
-            className="event-card bg-white rounded-lg shadow-lg p-4 min-w-[70vw] max-w-[70vw] flex-shrink-0 snap-center" // Reduced card width
+            className="event-card bg-white rounded-lg shadow-lg p-4 min-w-[70vw] max-w-[70vw] flex-shrink-0 snap-center"
           >
             {/* Image Section */}
-            <div className="event-image bg-blue-200 h-[400px] mb-4 rounded-lg"></div> {/* Increased image height */}
+            <div className="event-image bg-blue-200 h-[400px] mb-4 rounded-lg"></div>
 
             {/* Event Details */}
             <h3 className="text-2xl font-semibold mb-2">{event.title}</h3>
