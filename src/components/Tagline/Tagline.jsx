@@ -15,7 +15,7 @@ const Tagline = () => {
 	))
 
 	return (
-		<div className="flex justify-center items-center h-screen mr-[40rem] mb-[5rem]">
+		<div className="flex justify-center items-center h-screen z-100">
 			<motion.h1 className="text-4xl font-bold text-white w-96">
 				{letters}
 			</motion.h1>

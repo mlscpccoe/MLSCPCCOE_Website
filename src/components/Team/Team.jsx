@@ -9,7 +9,7 @@ const Events = () => {
 		target: target,
 	})
 
-	const x = useTransform(scrollYProgress, [0, 1], ["30%", "-50%"])
+	const x = useTransform(scrollYProgress, [0, 1], ["-50%", "30%"])
 
 	return (
 		<section className="relative h-[400vh] bg-neutral-900" ref={target}>
