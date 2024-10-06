@@ -1,4 +1,4 @@
-import "./abc.css"
+import "./Logo.css"
 import SquareAnimation from "../SquareAnimation/SquareAnimation"
 
 const LogoAnimation = () => {

@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				kanit: ["Kanit"],
+				Montserrat: ["Montserrat"],
 			},
 		},
 	},

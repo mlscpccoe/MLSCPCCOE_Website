@@ -10,51 +10,46 @@ function App() {
 	const [taglineDone, setTaglineDone] = useState(false)
 	const [displayHome, setDisplayHome] = useState(false)
 
-	// Logo animation complete after 2 seconds
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setAnimationDone(true)
-		}, 2000) // 2 seconds delay for logo animation
+		}, 2000)
 
 		return () => clearTimeout(timer)
 	}, [])
 
-	// Show tagline 1 second after logo animation is done
 	useEffect(() => {
 		if (animationDone) {
 			const timer = setTimeout(() => {
 				setDisplayTagline(true)
-			}, 3000) // 0.5 second delay after logo animation
+			}, 2000)
 
 			return () => clearTimeout(timer)
 		}
 	}, [animationDone])
 
-	// End tagline animation after 2 seconds
 	useEffect(() => {
 		if (displayTagline) {
 			const timer = setTimeout(() => {
 				setTaglineDone(true)
-			}, 500) // 2 seconds for tagline display
+			}, 500)
 
 			return () => clearTimeout(timer)
 		}
 	}, [displayTagline])
 
-	// Display home after tagline finishes
 	useEffect(() => {
 		if (taglineDone) {
 			const timer = setTimeout(() => {
 				setDisplayHome(true)
-			}, 1000) // 1 second delay after tagline
+			}, 200)
 
 			return () => clearTimeout(timer)
 		}
 	}, [taglineDone])
 
 	return (
-		<div className="w-screen h-screen flex justify-center items-center relative">
-			{/* Render LogoAnimation only if animationDone is false */}
+		<div className="w-screen h-screen flex justify-center items-center">
 			{!animationDone && <LogoAnimation />}
 
 			<AnimatePresence>
@@ -62,17 +57,37 @@ function App() {
 				{animationDone && !displayTagline && (
 					<motion.div
 						key="black-screen"
-						initial={{ y: "100vh" }}
-						animate={{ y: "0vh" }}
-						exit={{ y: "-100vh" }}
+						initial={{
+							width: "100%",
+							height: "0%",
+							top: "50%",
+							left: "0%",
+							x: "0%",
+							y: "-50%",
+						}}
+						animate={{
+							width: "100%",
+							height: "100%",
+							top: "50%",
+							left: "0%",
+							x: "0%",
+							y: "-50%",
+						}}
+						exit={{
+							width: "100%",
+							height: "0%",
+							top: "50%",
+							left: "0%",
+							x: "0%",
+							y: "-50%",
+						}}
 						transition={{ duration: 0.5, ease: "easeInOut" }}
-						className="fixed flex justify-center items-center top-0 left-0 w-full h-full bg-black"
+						className="fixed flex justify-center items-center bg-black"
 					>
 						<Tagline />
 					</motion.div>
 				)}
 
-				{/* White transition after tagline */}
 				{taglineDone && !displayHome && (
 					<motion.div
 						key="white-screen"
@@ -84,7 +99,6 @@ function App() {
 					/>
 				)}
 
-				{/* Display Home */}
 				{displayHome && (
 					<motion.div
 						key="home"
