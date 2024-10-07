@@ -28,9 +28,9 @@ const SlideTabs = () => {
 			style={{
 				borderColor: position.color,
 			}}
-			className="relative mx-auto flex w-fit rounded-full border-2 bg-white p-1 font-semibold"
+			className="relative mx-auto flex w-fit rounded-full border-2 bg-neutral-200 p-1 font-semibold"
 		>
-			{["Home", "Achievements", "Events", "Team", "Projects"].map(
+			{["Home", "Events", "Achievements", "Team", "Projects"].map(
 				(tab, index) => (
 					<Tab key={index} setPosition={setPosition} index={index}>
 						{tab}
@@ -46,7 +46,6 @@ const SlideTabs = () => {
 const Tab = ({ children, setPosition, index }) => {
 	const ref = useRef(null)
 
-	// Define the color list based on the index for the cursor
 	const colors = [
 		"#a1a8ad", // Black
 		"#f34f1c", // Orange
@@ -67,10 +66,10 @@ const Tab = ({ children, setPosition, index }) => {
 					left: ref.current.offsetLeft,
 					width,
 					opacity: 1,
-					color: colors[index], // Set the cursor color based on the index
+					color: colors[index],
 				})
 			}}
-			className={`relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase text-black md:px-5 md:py-3 md:text-base`} // Tabs always have black text on hover
+			className={`relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase text-black md:px-5 md:py-3 md:text-base`}
 		>
 			{children}
 		</li>

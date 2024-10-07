@@ -4,6 +4,7 @@ import Achievements from "../Achievements/Achievements"
 import Team from "../Team/Team"
 import Navbar from "../Navbar/Navbar"
 import Footer from "../Footer/Footer"
+import Projects from "../Projects/Projects"
 
 const MainContent = () => {
 	return (
@@ -14,6 +15,7 @@ const MainContent = () => {
 				<Events />
 				<Achievements />
 				<Team />
+				<Projects />
 				<Footer />
 			</div>
 		</>

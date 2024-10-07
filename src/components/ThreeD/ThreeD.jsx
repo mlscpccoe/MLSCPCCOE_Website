@@ -1,5 +1,5 @@
 const ThreeD = () => {
-	return <div className="w-full h-screen bg-red-600 text-white">ThreeD</div>
+	return <div className="w-full h-screen bg-stone-900 text-white">ThreeD</div>
 }
 
 export default ThreeD
