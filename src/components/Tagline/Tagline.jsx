@@ -9,7 +9,7 @@ const Tagline = () => {
 		visible: (i) => ({
 			opacity: 1,
 			y: 0,
-			transition: { delay: i * 0.2, duration: 0.3, ease: "easeOut" },
+			transition: { delay: i * 0.1, duration: 0.2, ease: "easeOut" },
 		}),
 	}
 
@@ -30,7 +30,7 @@ const Tagline = () => {
 							transition: { duration: 1 },
 						}}
 						exit={{
-							marginBottom: "-4%",
+							marginBottom: "-2%",
 							transition: { duration: 0.5, ease: "easeOut" },
 						}}
 						variants={stackVariant}

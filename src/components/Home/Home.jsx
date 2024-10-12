@@ -13,7 +13,7 @@ const Home = () => {
 	const xHero = useTransform(scrollYProgress, [0.5, 0.8], ["100vw", "0vw"])
 
 	return (
-		<div ref={containerRef} className="w-screen h-[300vh] bg-stone-950">
+		<div ref={containerRef} className="w-screen h-[300vh] bg-stone-950" id="Home">
 			<div className="w-full h-screen sticky top-0">
 				<div className="absolute top-0 left-0 w-full h-full">
 					<ThreeD />

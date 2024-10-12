@@ -32,7 +32,7 @@ function App() {
 		if (displayTagline) {
 			const timer = setTimeout(() => {
 				setTaglineDone(true)
-			}, 500)
+			}, 0)
 
 			return () => clearTimeout(timer)
 		}
@@ -49,7 +49,7 @@ function App() {
 	}, [taglineDone])
 
 	return (
-		<div className="w-screen h-screen flex justify-center items-center">
+		<div className="w-screen h-screen flex justify-center items-center ">
 			{!animationDone && <LogoAnimation />}
 
 			<AnimatePresence>
@@ -86,17 +86,6 @@ function App() {
 					>
 						<Tagline />
 					</motion.div>
-				)}
-
-				{taglineDone && !displayHome && (
-					<motion.div
-						key="white-screen"
-						initial={{ y: "-100vh" }}
-						animate={{ y: "0vh" }}
-						exit={{ y: "-100vh" }}
-						transition={{ duration: 0.5, ease: "easeInOut" }}
-						className="fixed top-0 left-0 w-full h-full bg-white z-50"
-					/>
 				)}
 
 				{displayHome && (

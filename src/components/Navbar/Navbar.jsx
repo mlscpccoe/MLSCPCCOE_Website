@@ -1,11 +1,30 @@
 import { useRef, useState } from "react"
-import { motion } from "framer-motion"
+import { motion, useScroll, useMotionValueEvent } from "framer-motion"
+import { Link } from "react-scroll"
 
 const Navbar = () => {
+	const { scrollY } = useScroll()
+	const [hidden, setHidden] = useState(false)
+	useMotionValueEvent(scrollY, "change", (latest) => {
+		const prev = scrollY.getPrevious()
+		if (latest > prev && latest > 150) {
+			setHidden(true)
+		} else {
+			setHidden(false)
+		}
+	})
 	return (
-		<div className="fixed -translate-x-1/2 left-1/2 mt-6 z-[500]">
+		<motion.div
+			className="fixed -translate-x-1/2 left-1/2 mt-6 z-[500]"
+			variants={{
+				visible: { y: 0, x: "-50%" },
+				hidden: { y: "-200%", x: "-50%" },
+			}}
+			animate={hidden ? "hidden" : "visible"}
+			transition={{ duration: 0.35, ease: "easeInOut" }}
+		>
 			<SlideTabs />
-		</div>
+		</motion.div>
 	)
 }
 
@@ -32,9 +51,11 @@ const SlideTabs = () => {
 		>
 			{["Home", "Events", "Achievements", "Team", "Projects"].map(
 				(tab, index) => (
-					<Tab key={index} setPosition={setPosition} index={index}>
-						{tab}
-					</Tab>
+					<Link key={index} to={tab} smooth={true} duration={1000}>
+						<Tab setPosition={setPosition} index={index}>
+							{tab}
+						</Tab>
+					</Link>
 				)
 			)}
 

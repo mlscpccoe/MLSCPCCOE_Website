@@ -4,7 +4,7 @@ import SquareAnimation from "../SquareAnimation/SquareAnimation"
 const LogoAnimation = () => {
 	return (
 		<>
-			<div className="flex flex-row items-center translate-x-[0%] translate-y-[-20%]">
+			<div className="flex flex-row items-center translate-x-[0%] translate-y-[-20%] ">
 				<div className="w-96">
 					<svg
 						width="490"

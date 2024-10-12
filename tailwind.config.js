@@ -6,6 +6,10 @@ export default {
 			fontFamily: {
 				Montserrat: ["Montserrat"],
 			},
+			boxShadow: {
+				"custom-negative": "10px 10px 0px #000",
+				"custom-positive": "20px 20px 0px #000",
+			},
 		},
 	},
 	plugins: [],

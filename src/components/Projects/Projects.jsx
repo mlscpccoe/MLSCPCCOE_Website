@@ -9,15 +9,19 @@ const Projects = () => {
 		target: target,
 	})
 
-	const x = useTransform(scrollYProgress, [0, 1], ["35%", "-35%"])
+	const x = useTransform(scrollYProgress, [0, 1], ["-35%", "35%"])
 
 	return (
-		<section className="relative h-[400vh] bg-neutral-900" ref={target}>
-			<div className="w-full sticky top-0 h-screen bg-violet-600 overflow-hidden">
-				<div className="text-black text-center text-8xl font-semibold poppins-semibold mt-20">
-					Events
+		<section
+			className="relative h-[400vh] bg-neutral-900"
+			ref={target}
+			id="Projects"
+		>
+			<div className="w-full sticky top-0 h-screen bg-stone-950 overflow-hidden">
+				<div className="text-neutral-100 text-center text-8xl font-semibold poppins-semibold mt-20">
+					Projects
 				</div>
-				<div className="w-full sticky top-0 h-screen flex justify-center mt-16 bg-violet-600 overflow-hidden">
+				<div className="w-full sticky top-0 h-screen flex justify-center mt-16 bg-stone-950 overflow-hidden">
 					<motion.div
 						className="flex flex-row ml-96 mr-96 gap-96"
 						style={{ x }}
