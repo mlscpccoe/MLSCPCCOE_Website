@@ -17,7 +17,7 @@ const Team = () => {
 		"#01a6f0", // Blue
 	]
 
-	const x = useTransform(scrollYProgress, [0, 1], ["30%", "-35%"])
+	const x = useTransform(scrollYProgress, [0, 1], ["35%", "-35%"])
 
 	return (
 		<section className="relative h-[400vh] bg-neutral-900" ref={target} id="Team">
@@ -30,7 +30,7 @@ const Team = () => {
 					MLSC TEAM 2024-25
 				</h2>
 				<motion.div className="flex flex-row" style={{ x }}>
-					{Array.from({ length: 10 }, (_, index) => (
+					{Array.from({ length: 13 }, (_, index) => (
 						<div
 							key={index}
 							className="hover:scale-105 transition-all duration-300"
@@ -60,23 +60,6 @@ const Team = () => {
 							</motion.div>
 						</div>
 					))}
-					<div className="w-[20rem] h-[26rem] m-4 flex flex-col items-center justify-center font-semibold text-lg hover:scale-105 hover:translate-x-5 transition-all duration-300">
-						Meet rest of the awesome folks!
-						<svg
-							width="20"
-							height="20"
-							viewBox="0 0 15 15"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-								fill="currentColor"
-								fillRule="evenodd"
-								clipRule="evenodd"
-							></path>
-						</svg>
-					</div>
 				</motion.div>
 			</div>
 		</section>

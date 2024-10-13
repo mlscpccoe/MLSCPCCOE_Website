@@ -1,22 +1,22 @@
 import { useState, useEffect } from "react"
-import github from "../../assets/github.png"
-import githubcolor from "../../assets/githubcolor.png"
 import instagram from "../../assets/instagram.png"
 import instagramcolor from "../../assets/instagramcolor.png"
 import linkedin from "../../assets/linkedin.png"
 import linkedincolor from "../../assets/linkedincolor.png"
+import { motion, useScroll, useTransform } from "framer-motion"
 
 const Hero = () => {
+	const { scrollYProgress } = useScroll()
+	const scale = useTransform(scrollYProgress, [0, 0.11, 0.15], [0, 1, 1.5])
 	const [isLinkedinHovered, setIsLinkedinHovered] = useState(false)
 	const [isInstagramHovered, setIsInstagramHovered] = useState(false)
-	const [isGithubHovered, setIsGithubHovered] = useState(false)
 	const [currentWordIndex, setCurrentWordIndex] = useState(-1)
 
 	const words = [
 		{ english: "Microsoft", hindi: "माइक्रोसॉफ्ट", color: "#f34f1c" },
 		{ english: "Learn", hindi: "लर्न", color: "#7fbc00" },
 		{ english: "Student", hindi: "स्टूडेंट", color: "#ffba01" },
-		{ english: "Club", hindi: "क्लब", color: "#01a6f0" },
+		{ english: "Chapter", hindi: "चैप्टर", color: "#01a6f0" },
 	]
 
 	useEffect(() => {
@@ -28,7 +28,10 @@ const Hero = () => {
 	}, [words.length])
 
 	return (
-		<div className="w-screen h-screen flex backdrop-blur-md flex-col justify-center items-center pb-72">
+		<motion.div
+			className="w-screen h-screen flex backdrop-blur-md flex-col justify-center items-center"
+			style={{ scale }}
+		>
 			<h1 className="text-6xl font-semibold text-neutral-100">
 				{words.map((word, index) => (
 					<span
@@ -71,17 +74,8 @@ const Hero = () => {
 						onMouseLeave={() => setIsInstagramHovered(false)}
 					/>
 				</span>
-				<span className="w-12 h-10 mx-1 mt-1">
-					<img
-						src={isGithubHovered ? githubcolor : github}
-						alt="GitHub"
-						className="w-14 transition-transform duration-300 hover:scale-105"
-						onMouseEnter={() => setIsGithubHovered(true)}
-						onMouseLeave={() => setIsGithubHovered(false)}
-					/>
-				</span>
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 
