@@ -9,7 +9,10 @@ const Projects = () => {
 	]
 
 	return (
-		<div className="relative w-full h-[200vh] bg-stone-950 max-md:h-[225vh]" id="Projects">
+		<div
+			className="relative w-full h-[200vh] bg-stone-950 max-md:h-[250vh]"
+			id="Projects"
+		>
 			{/* Background text */}
 			<div className="absolute inset-0 opacity-[0.02] text-neutral-50 text-[8rem] font-bold tracking-wider overflow-hidden">
 				<div className="flex flex-wrap w-full h-full">
