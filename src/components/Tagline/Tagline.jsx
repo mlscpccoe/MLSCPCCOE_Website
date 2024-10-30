@@ -34,7 +34,7 @@ const Tagline = () => {
 							transition: { duration: 0.5, ease: "easeOut" },
 						}}
 						variants={stackVariant}
-						className="text-xl md:text-5xl font-bold text-white" // Responsive text size
+						className="text-lg md:text-5xl font-bold text-white" // Responsive text size
 					>
 						{text}
 					</motion.h1>

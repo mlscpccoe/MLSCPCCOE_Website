@@ -15,7 +15,7 @@ const Navbar = () => {
 	})
 	return (
 		<motion.div
-			className="fixed -translate-x-1/2 left-1/2 mt-6 z-[500]"
+			className="fixed -translate-x-1/2 left-1/2 mt-6 z-[500] w-full max-md:scale-90"
 			variants={{
 				visible: { y: 0, x: "-50%" },
 				hidden: { y: "-200%", x: "-50%" },
@@ -47,7 +47,7 @@ const SlideTabs = () => {
 			style={{
 				borderColor: position.color,
 			}}
-			className="relative mx-auto flex w-fit rounded-full border-2 bg-neutral-200 p-1 font-semibold"
+			className="relative mx-auto flex w-fit rounded-full border-2 bg-neutral-200 p-1 font-semibold max-md:scale-90 "
 		>
 			{["Home", "Events", "Achievements", "Team", "Projects"].map(
 				(tab, index) => (
@@ -90,7 +90,7 @@ const Tab = ({ children, setPosition, index }) => {
 					color: colors[index],
 				})
 			}}
-			className={`relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase text-black md:px-5 md:py-3 md:text-base`}
+			className={`relative z-10 block cursor-pointer px-2  py-1.5 text-xs uppercase text-black md:px-5 md:py-3 md:text-base max-md:scale-90`}
 		>
 			{children}
 		</li>
@@ -106,7 +106,7 @@ const Cursor = ({ position }) => {
 			style={{
 				backgroundColor: position.color,
 			}}
-			className="absolute z-0 h-7 rounded-full md:h-12"
+			className="absolute z-0 h-7 rounded-full md:h-12 max-md:scale-90"
 		/>
 	)
 }
