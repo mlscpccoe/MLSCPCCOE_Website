@@ -26,14 +26,14 @@ const Team = () => {
 				<div className="absolute inset-0 bg-grid-neutral-900/[0.03] -z-0"></div>
 
 				<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(0,0,0,0.3)_1px,_transparent_1px)] bg-[length:20px_20px] -z-0"></div>
-				<h2 className="text-black text-5xl absolute top-[7rem] z-10 font-bold hover:tracking-wide transition-all duration-300">
+				<h2 className="text-black text-5xl absolute top-[7rem] z-10 font-bold hover:tracking-wide transition-all duration-300 max-md:text-2xl">
 					MLSC TEAM 2024-25
 				</h2>
 				<motion.div className="flex flex-row" style={{ x }}>
 					{Array.from({ length: 13 }, (_, index) => (
 						<div
 							key={index}
-							className="hover:scale-105 transition-all duration-300"
+							className="hover:scale-105 transition-all duration-300 max-md:scale-90"
 						>
 							<motion.div
 								initial={{

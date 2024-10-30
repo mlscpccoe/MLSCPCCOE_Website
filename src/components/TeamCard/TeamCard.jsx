@@ -1,7 +1,7 @@
 const TeamCard = ({ imageSrc, name, role, color, rotation }) => {
 	return (
 		<div
-			className="flex flex-col items-center justify-center w-[20rem] h-[26rem] m-4 shadow-sm border-2 border-black"
+			className="flex flex-col items-center justify-center w-[20rem] h-[26rem] m-4 shadow-sm border-2 border-black max-md:scale-75"
 			style={{ backgroundColor: color, transform: `rotate(${rotation}deg)` }}
 		>
 			{/* The Image */}
