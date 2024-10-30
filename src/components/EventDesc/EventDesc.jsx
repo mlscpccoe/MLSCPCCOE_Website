@@ -1,7 +1,7 @@
 const EventDesc = ({ color }) => {
 	return (
-		<div className="max-md:scale-75">
-			<h2 className="hover:tracking-widest italic transition-all duration-300 text-center font-semibold text-3xl mt-8 mb-4 max-md:scale-50 max-md:mt-[-60px] max-md:mb-[-20px]">
+		<div className="max-md:scale-[0.8]">
+			<h2 className="hover:tracking-widest italic transition-all duration-300 text-center font-semibold text-3xl mt-8 mb-4 max-md:scale-50 max-md:mt-[-120px] max-md:mb-[-20px]">
 				Event name
 			</h2>
 			<div
