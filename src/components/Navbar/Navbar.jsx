@@ -75,11 +75,13 @@ const Tab = ({ children, setPosition, index }) => {
 		"#01a6f0", // Blue
 	]
 
+	const isMobile = window.innerWidth <= 768 // Adjust the width according to your breakpoint
+
 	return (
 		<li
 			ref={ref}
 			onMouseEnter={() => {
-				if (!ref?.current) return
+				if (!ref?.current || isMobile) return // Prevent hover effects on mobile
 
 				const { width } = ref.current.getBoundingClientRect()
 
@@ -90,12 +92,13 @@ const Tab = ({ children, setPosition, index }) => {
 					color: colors[index],
 				})
 			}}
-			className={`relative z-10 block cursor-pointer px-2  py-1.5 text-xs uppercase text-black md:px-5 md:py-3 md:text-base max-md:scale-90`}
+			className={`relative z-10 block cursor-pointer px-2 py-1.5 text-xs uppercase text-black md:px-5 md:py-3 md:text-base max-md:scale-90`}
 		>
 			{children}
 		</li>
 	)
 }
+
 
 const Cursor = ({ position }) => {
 	return (
