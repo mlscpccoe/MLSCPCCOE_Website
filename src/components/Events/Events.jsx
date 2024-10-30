@@ -16,7 +16,7 @@ const Events = () => {
 		target: target,
 	})
 
-	const x = useTransform(scrollYProgress, [0, 1], ["35%", "-35%"])
+	const x = useTransform(scrollYProgress, [0, 1], ["50%", "-35%"])
 
 	return (
 		<section className="relative h-[400vh] bg-neutral-900" ref={target} id="Events">
@@ -32,7 +32,7 @@ overflow-hidden"
  bg-neutral-100 overflow-hidden"
 				>
 					<motion.div
-						className="flex flex-row ml-96 mr-96 gap-96 max-md:gap-4 max-md:ml-4 max-md:mr-4"
+						className="flex flex-row ml-96 mr-96 gap-96 max-md:gap-2 max-md:ml-0 max-md:mr-0"
 						style={{ x }}
 					>
 						{Array.from({ length: 10 }, (_, index) => (

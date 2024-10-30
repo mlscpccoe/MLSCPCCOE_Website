@@ -17,7 +17,7 @@ const Team = () => {
 		"#01a6f0", // Blue
 	]
 
-	const x = useTransform(scrollYProgress, [0, 1], ["35%", "-35%"])
+	const x = useTransform(scrollYProgress, [0, 1], ["50%", "-50%"])
 
 	return (
 		<section className="relative h-[400vh] bg-neutral-900" ref={target} id="Team">
