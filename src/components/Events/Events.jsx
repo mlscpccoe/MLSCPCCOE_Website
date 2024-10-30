@@ -32,7 +32,7 @@ overflow-hidden"
  bg-neutral-100 overflow-hidden"
 				>
 					<motion.div
-						className="flex flex-row ml-96 mr-96 gap-96"
+						className="flex flex-row ml-96 mr-96 gap-96 max-md:gap-4 max-md:ml-4 max-md:mr-4"
 						style={{ x }}
 					>
 						{Array.from({ length: 10 }, (_, index) => (

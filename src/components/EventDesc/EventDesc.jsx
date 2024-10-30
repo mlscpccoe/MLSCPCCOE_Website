@@ -1,11 +1,11 @@
 const EventDesc = ({ color }) => {
 	return (
 		<>
-			<h2 className="hover:tracking-widest italic transition-all duration-300 text-center font-semibold text-3xl mt-8 mb-4">
+			<h2 className="hover:tracking-widest italic transition-all duration-300 text-center font-semibold text-3xl mt-8 mb-4 max-md:scale-50 max-md:mt-[-60px] max-md:mb-[-20px]">
 				Event name
 			</h2>
 			<div
-				className="w-full h-32 bg-white border-2 border-black shadow-custom-negative hover:shadow-custom-positive transition-all duration-200 p-2 hover:-translate-x-5 hover:-translate-y-5 mt-8"
+				className="w-full h-32 bg-white border-2 border-black shadow-custom-negative hover:shadow-custom-positive transition-all duration-200 p-2 hover:-translate-x-5 hover:-translate-y-5 mt-8 max-md:scale-50 max-md:mt-0"
 				style={{ backgroundColor: `${color}` }}
 			>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
