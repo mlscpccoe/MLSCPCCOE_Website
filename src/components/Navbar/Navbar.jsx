@@ -49,15 +49,13 @@ const SlideTabs = () => {
 			}}
 			className="relative mx-auto flex w-fit rounded-full border-2 bg-neutral-200 p-1 font-semibold max-md:scale-90 "
 		>
-			{["Home", "Events", "Achievements", "Team", "Projects"].map(
-				(tab, index) => (
-					<Link key={index} to={tab} smooth={true} duration={1000}>
-						<Tab setPosition={setPosition} index={index}>
-							{tab}
-						</Tab>
-					</Link>
-				)
-			)}
+			{["Home", "Events", "Achievements", "Team"].map((tab, index) => (
+				<Link key={index} to={tab} smooth={true} duration={1000}>
+					<Tab setPosition={setPosition} index={index}>
+						{tab}
+					</Tab>
+				</Link>
+			))}
 
 			<Cursor position={position} />
 		</ul>
@@ -68,7 +66,6 @@ const Tab = ({ children, setPosition, index }) => {
 	const ref = useRef(null)
 
 	const colors = [
-		"#a1a8ad", // Black
 		"#f34f1c", // Orange
 		"#7fbc00", // Green
 		"#ffba01", // Yellow
@@ -98,7 +95,6 @@ const Tab = ({ children, setPosition, index }) => {
 		</li>
 	)
 }
-
 
 const Cursor = ({ position }) => {
 	return (

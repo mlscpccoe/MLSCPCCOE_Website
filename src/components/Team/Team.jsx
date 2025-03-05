@@ -1,7 +1,7 @@
 import TeamCard from "../TeamCard/TeamCard"
 import { useRef } from "react"
 import { motion, useTransform, useScroll } from "framer-motion"
-import cat from "../../assets/cat.png"
+// import cat from "../../assets/cat.png"
 
 const Team = () => {
 	const target = useRef(null)
@@ -49,7 +49,7 @@ const Team = () => {
 								}}
 							>
 								<TeamCard
-									imageSrc={cat}
+									imageSrc="https://res.cloudinary.com/dcgb5c6y8/image/upload/v1741012879/mlscteam/sarthak.jpg"
 									name="Sarthak Joshi"
 									role="Web Development Head"
 									color={colors[index % colors.length]}
