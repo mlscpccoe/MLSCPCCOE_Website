@@ -8,6 +8,30 @@ const Achievements = () => {
 		"#01a6f0", // Blue
 	]
 
+	const achievements = [
+		{
+			name: "Smart India Hackathon Winner",
+			description:
+				`🏆 Team Anurved wins SIH 2024! 🚀  
+"Sahakar" enhances govt collaboration with AI, GIS, & geotagged conflict resolution. 🎉` , 
+
+			image: "https://res.cloudinary.com/dweebldig/image/upload/v1741514135/Screenshot_2025-03-09_152400_cyunoq.png", // Replace with actual image path
+		},
+		{
+			"name": "BMC Hackathon Winner",
+			"description": "Secured 2nd place 🏆 in the BMC Software India Hackathon. It was an intense 72-hour AI/ML and Data Science challenge, where we pushed our limits, collaborated, and innovated to build a solution within the given timeframe.",
+			"image": "https://res.cloudinary.com/dweebldig/image/upload/v1741514351/Screenshot_2025-03-09_152853_zxzh3a.png"
+		},
+		  
+		{
+			name: "Connectwise Internship",
+			description: "Our team member has secured an internship at ConnectWise with a ₹25,000 monthly stipend! 🎉💼 Kudos to their hard work and dedication! 👏",
+			image: "https://res.cloudinary.com/dweebldig/image/upload/v1741514810/download_cu40ny.png" // Replace with actual image path
+		}
+		
+		
+	]
+
 	return (
 		<div className="relative w-full h-fit bg-stone-950" id="Achievements">
 			{/* Background text */}
@@ -36,11 +60,14 @@ const Achievements = () => {
 			</h2>
 
 			<div className="relative z-10 flex flex-col w-3/4 mx-auto mt-32 space-y-8 max-md:mt-8">
-				{Array.from({ length: 4 }, (_, index) => (
+				{achievements.map((achieve, index) => (
 					<div key={index} className="flex flex-col md:flex-row">
 						<AchieveCard
 							alt={index % 2 === 1}
 							color={colors[index % colors.length]}
+							name={achieve.name}
+							description={achieve.description}
+							image={achieve.image}
 						/>
 					</div>
 				))}

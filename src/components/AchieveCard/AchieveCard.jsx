@@ -1,9 +1,8 @@
-import random from "../../assets/random.png"
 import Reveal from "../Reveal/Reveal"
 import { useRef, useEffect } from "react"
 import { motion, useInView, useAnimation } from "framer-motion"
 
-const AchieveCard = ({ alt = false, color }) => {
+const AchieveCard = ({ alt = false, color, name, description, image }) => {
 	const ref = useRef(null)
 
 	const variants = {
@@ -28,24 +27,7 @@ const AchieveCard = ({ alt = false, color }) => {
 				alt ? "flex-col md:flex-row-reverse" : "flex-col md:flex-row"
 			} justify-between items-center w-full my-4`}
 		>
-			<div className="w-full md:w-1/3">
-				<Reveal color={color}>
-					<span
-						className="text-neutral-100 text-2xl md:text-4xl block font-semibold mb-4"
-						style={{ color }}
-					>
-						Lorem ipsum dolor sit.
-					</span>
-				</Reveal>
-				<Reveal color={color}>
-					<span className="text-neutral-200 text-base md:text-lg ">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-						animi soluta error dolorem deleniti. Unde ab at debitis itaque
-						nulla inventore distinctio reprehenderit, alias repellendus
-						consequuntur saepe dolores nemo delectus?
-					</span>
-				</Reveal>
-			</div>
+			{/* Image should be first */}
 			<motion.div
 				ref={ref}
 				className="w-full md:w-1/3 max-md:mt-4"
@@ -54,8 +36,25 @@ const AchieveCard = ({ alt = false, color }) => {
 				animate={mainControls}
 				transition={{ duration: 0.5, delay: 0.25 }}
 			>
-				<img src={random} alt="" className="w-full h-auto" />
+				<img src={image} alt={name} className="w-full h-auto" />
 			</motion.div>
+
+			{/* Text content */}
+			<div className="w-full md:w-1/3">
+				<Reveal color={color}>
+					<span
+						className="text-neutral-100 text-2xl md:text-4xl block font-semibold mb-4"
+						style={{ color }}
+					>
+						{name}
+					</span>
+				</Reveal>
+				<Reveal color={color}>
+					<span className="text-neutral-200 text-base md:text-lg ">
+						{description}
+					</span>
+				</Reveal>
+			</div>
 		</div>
 	)
 }
