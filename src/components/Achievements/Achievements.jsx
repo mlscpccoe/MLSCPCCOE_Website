@@ -31,7 +31,10 @@ const Achievements = () => {
 	]
 
 	return (
-		<div className="relative w-full h-[165vh] bg-stone-950" id="Achievements">
+		<div
+			className="relative w-full h-[165vh] bg-stone-950 max-md:h-[220vh]"
+			id="Achievements"
+		>
 			{/* Background text */}
 			<div className="absolute inset-0 opacity-[0.02] text-neutral-50 text-[8rem] font-bold tracking-wider overflow-hidden">
 				<div className="flex flex-wrap w-full h-full">
@@ -59,7 +62,7 @@ const Achievements = () => {
 
 			<div className="relative z-10 flex flex-col w-3/4 mx-auto mt-32 space-y-8 max-md:mt-8">
 				{achievements.map((achieve, index) => (
-					<div key={index} className="flex flex-col md:flex-row">
+					<div key={index} className="flex flex-col md:flex-row max-md:mt-4">
 						<AchieveCard
 							alt={index % 2 === 1}
 							color={colors[index % colors.length]}

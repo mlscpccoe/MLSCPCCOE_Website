@@ -36,14 +36,14 @@ const AchieveCard = ({ alt = false, color, name, description, image }) => {
 				animate={mainControls}
 				transition={{ duration: 0.5, delay: 0.25 }}
 			>
-				<img src={image} alt={name} className="w-full h-72" />
+				<img src={image} alt={name} className="w-full h-72 max-md:h-48" />
 			</motion.div>
 
 			{/* Text content */}
 			<div className="w-full md:w-1/3">
 				<Reveal color={color}>
 					<span
-						className="text-neutral-100 text-2xl md:text-4xl block font-semibold mb-4"
+						className="text-neutral-100 text-2xl md:text-4xl block font-semibold mb-4 max-md:mt-4"
 						style={{ color }}
 					>
 						{name}
