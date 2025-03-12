@@ -1,5 +1,6 @@
 import Reveal from "../Reveal/Reveal"
 import { useRef, useEffect } from "react"
+import { Helmet } from "react-helmet"
 import { motion, useInView, useAnimation } from "framer-motion"
 
 const AchieveCard = ({ alt = false, color, name, description, image }) => {
@@ -36,6 +37,9 @@ const AchieveCard = ({ alt = false, color, name, description, image }) => {
 				animate={mainControls}
 				transition={{ duration: 0.5, delay: 0.25 }}
 			>
+				<Helmet>
+					<link rel="preload" href={image} as="image" />
+				</Helmet>
 				<img src={image} alt={name} className="w-full h-72 max-md:h-48" />
 			</motion.div>
 

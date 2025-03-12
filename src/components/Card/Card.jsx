@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Helmet } from "react-helmet"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const Card = ({ color, desc, photo1, photo2 }) => {
@@ -26,6 +27,10 @@ const Card = ({ color, desc, photo1, photo2 }) => {
 			{/* Desktop Layout */}
 			<div className="hidden sm:flex flex-row justify-center items-center h-full">
 				<div className="w-1/3 mx-4 font-semibold">{desc}</div>
+				<Helmet>
+					<link rel="preload" href={photo1} as="image" />
+					<link rel="preload" href={photo2} as="image" />
+				</Helmet>
 				<img
 					src={photo1}
 					alt=""

@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet"
+
 const TeamCard = ({ imageSrc, name, role, github, linkedin, color, rotation }) => {
 	return (
 		<div
@@ -9,6 +11,9 @@ const TeamCard = ({ imageSrc, name, role, github, linkedin, color, rotation }) =
 				className="w-full h-[77%] flex justify-center items-center p-2"
 				style={{ backgroundColor: color }}
 			>
+				<Helmet>
+					<link rel="preload" href={imageSrc} as="image" />
+				</Helmet>
 				<img
 					src={imageSrc}
 					alt={`${name}'s profile`}
