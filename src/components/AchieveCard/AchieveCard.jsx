@@ -25,7 +25,7 @@ const AchieveCard = ({ alt = false, color, name, description, image }) => {
 		<div
 			className={`flex ${
 				alt ? "flex-col md:flex-row-reverse" : "flex-col md:flex-row"
-			} justify-between items-center w-full my-4`}
+			} justify-between items-center w-full my-8`}
 		>
 			{/* Image should be first */}
 			<motion.div
@@ -43,7 +43,7 @@ const AchieveCard = ({ alt = false, color, name, description, image }) => {
 			<div className="w-full md:w-1/3">
 				<Reveal color={color}>
 					<span
-						className="text-neutral-100 text-2xl md:text-4xl block font-semibold mb-4 max-md:mt-4"
+						className="text-neutral-100 text-2xl md:text-4xl block font-semibold mb-4 max-md:mt-6"
 						style={{ color }}
 					>
 						{name}
