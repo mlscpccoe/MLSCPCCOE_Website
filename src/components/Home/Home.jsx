@@ -62,32 +62,38 @@ const Hero = () => {
 					Pimpri Chinchwad College of Engineering
 				</h2>
 				<span className="text-base sm:text-lg font-light text-neutral-300 w-full md:w-1/2 text-center mt-8 mx-auto block">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
-					consectetur ipsam, ducimus cum asperiores, voluptates amet maxime
-					expedita veniam quas molestias esse nihil maiores quaerat similique
-					doloribus perferendis laudantium nemo.
+					At Microsoft Learn Student Chapter PCCOE, we believe in igniting
+					curiosity and empowering students to turn ideas into reality. Our
+					aim is to build a vibrant tech community through hands-on workshops,
+					engaging sessions, and collaborative events. Our goal? To inspire
+					the next generation of tech leaders by fostering creativity,
+					knowledge, and connections that last a lifetime.
 				</span>
 				<span className="text-sm sm:text-md font-semibold text-neutral-300 w-full md:w-1/2 text-center mt-8 mx-auto block">
 					Stay updated with us on our socials!
 				</span>
 				<div className="flex mt-4 flex-wrap justify-center">
 					<span className="w-10 h-10 mx-2 mt-2">
-						<img
-							src={isLinkedinHovered ? linkedincolor : linkedin}
-							alt="LinkedIn"
-							className="w-10 transition-transform duration-300 hover:scale-105"
-							onMouseEnter={() => setIsLinkedinHovered(true)}
-							onMouseLeave={() => setIsLinkedinHovered(false)}
-						/>
+						<a href="https://www.linkedin.com/company/mlsc-pccoe-chapter">
+							<img
+								src={isLinkedinHovered ? linkedincolor : linkedin}
+								alt="LinkedIn"
+								className="w-10 transition-transform duration-300 hover:scale-105"
+								onMouseEnter={() => setIsLinkedinHovered(true)}
+								onMouseLeave={() => setIsLinkedinHovered(false)}
+							/>
+						</a>
 					</span>
 					<span className="w-14 h-10 mx-2">
-						<img
-							src={isInstagramHovered ? instagramcolor : instagram}
-							alt="Instagram"
-							className="w-16 transition-transform duration-300 hover:scale-105"
-							onMouseEnter={() => setIsInstagramHovered(true)}
-							onMouseLeave={() => setIsInstagramHovered(false)}
-						/>
+						<a href="https://www.instagram.com/mlscpccoe/">
+							<img
+								src={isInstagramHovered ? instagramcolor : instagram}
+								alt="Instagram"
+								className="w-16 transition-transform duration-300 hover:scale-105"
+								onMouseEnter={() => setIsInstagramHovered(true)}
+								onMouseLeave={() => setIsInstagramHovered(false)}
+							/>
+						</a>
 					</span>
 				</div>
 			</div>

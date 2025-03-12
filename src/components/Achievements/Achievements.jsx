@@ -11,29 +11,27 @@ const Achievements = () => {
 	const achievements = [
 		{
 			name: "Smart India Hackathon Winner",
-			description:
-				`🏆 Team Anurved wins SIH 2024! 🚀  
-"Sahakar" enhances govt collaboration with AI, GIS, & geotagged conflict resolution. 🎉` , 
+			description: `Payal Pawar, Siddhesh Patil, Pawan Patil from the MLSC PCCoE Team won the 2025 edition of Smart India Hackathon`,
 
-			image: "https://res.cloudinary.com/dweebldig/image/upload/v1741514135/Screenshot_2025-03-09_152400_cyunoq.png", // Replace with actual image path
+			image: "https://res.cloudinary.com/dweebldig/image/upload/v1741514135/Screenshot_2025-03-09_152400_cyunoq.png",
 		},
 		{
-			"name": "BMC Hackathon Winner",
-			"description": "Secured 2nd place 🏆 in the BMC Software India Hackathon. It was an intense 72-hour AI/ML and Data Science challenge, where we pushed our limits, collaborated, and innovated to build a solution within the given timeframe.",
-			"image": "https://res.cloudinary.com/dweebldig/image/upload/v1741514351/Screenshot_2025-03-09_152853_zxzh3a.png"
+			name: "BMC Hackathon Winner",
+			description:
+				"Adinath Yadav from the MLSC PCCoE Team secured 2nd place in the BMC Software India Hackathon.",
+			image: "https://res.cloudinary.com/dweebldig/image/upload/v1741514351/Screenshot_2025-03-09_152853_zxzh3a.png",
 		},
-		  
+
 		{
-			name: "Connectwise Internship",
-			description: "Our team member has secured an internship at ConnectWise with a ₹25,000 monthly stipend! 🎉💼 Kudos to their hard work and dedication! 👏",
-			image: "https://res.cloudinary.com/dweebldig/image/upload/v1741514810/download_cu40ny.png" // Replace with actual image path
-		}
-		
-		
+			name: "ICPC Regionals",
+			description:
+				"Siddhesh Patil from the MLSC PCCoE Team participated in the prestigious ICPC Kanpur regionals",
+			image: "https://res.cloudinary.com/dcgb5c6y8/image/upload/t_icpc2/icpc",
+		},
 	]
 
 	return (
-		<div className="relative w-full h-fit bg-stone-950" id="Achievements">
+		<div className="relative w-full h-[165vh] bg-stone-950" id="Achievements">
 			{/* Background text */}
 			<div className="absolute inset-0 opacity-[0.02] text-neutral-50 text-[8rem] font-bold tracking-wider overflow-hidden">
 				<div className="flex flex-wrap w-full h-full">

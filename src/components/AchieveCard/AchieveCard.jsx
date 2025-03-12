@@ -36,7 +36,7 @@ const AchieveCard = ({ alt = false, color, name, description, image }) => {
 				animate={mainControls}
 				transition={{ duration: 0.5, delay: 0.25 }}
 			>
-				<img src={image} alt={name} className="w-full h-auto" />
+				<img src={image} alt={name} className="w-full h-72" />
 			</motion.div>
 
 			{/* Text content */}

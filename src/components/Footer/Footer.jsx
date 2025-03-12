@@ -1,11 +1,6 @@
 import mlsc from "../../assets/logo.png"
 import React from "react"
-import { Link } from "react-router-dom"
-import {
-	InstagramLogoIcon,
-	LinkedInLogoIcon,
-	EnvelopeClosedIcon,
-} from "@radix-ui/react-icons"
+import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons"
 
 const Footer = () => {
 	const currentYear = new Date().getFullYear()
@@ -25,57 +20,20 @@ const Footer = () => {
 						<p className="text-gray-200 max-w-md text-center md:text-left">
 							Breaking Norms, Setting Standards.
 						</p>
-						<div className="flex flex-col md:flex-row items-center md:space-x-4 space-y-2 md:space-y-0">
-							<Link
-								to="/about"
-								className="text-gray-400 font-light hover:text-gray-300 transition-colors duration-200"
-							>
-								Home
-							</Link>
-							<Link
-								to="/events"
-								className="text-gray-400 font-light hover:text-gray-300 transition-colors duration-200"
-							>
-								Events
-							</Link>
-							<Link
-								to="/team"
-								className="text-gray-400 font-light hover:text-gray-300 transition-colors duration-200"
-							>
-								Team
-							</Link>
-							<Link
-								to="/achievements"
-								className="text-gray-400 font-light hover:text-gray-300 transition-colors duration-200"
-							>
-								Achievements
-							</Link>
-							<Link
-								to="/projects"
-								className="text-gray-400 font-light hover:text-gray-300 transition-colors duration-200"
-							>
-								Projects
-							</Link>
-						</div>
 					</div>
 
 					{/* Right side - Contact and Social links */}
 					<div className="flex flex-col items-center md:items-end space-y-4 md:w-1/3 text-center md:text-left">
 						<h3 className="font-semibold text-lg">Connect with Us</h3>
 						<SocialLink
-							href="https://instagram.com"
+							href="https://www.instagram.com/mlscpccoe/"
 							icon={<InstagramLogoIcon />}
 							label="Follow us on Instagram"
 						/>
 						<SocialLink
-							href="https://linkedin.com"
+							href="https://www.linkedin.com/company/mlsc-pccoe-chapter"
 							icon={<LinkedInLogoIcon />}
 							label="Connect on LinkedIn"
-						/>
-						<SocialLink
-							href="mailto:example@email.com"
-							icon={<EnvelopeClosedIcon />}
-							label="example@email.com"
 						/>
 					</div>
 				</div>
