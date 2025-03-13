@@ -26,7 +26,9 @@ const Card = ({ color, desc, photo1, photo2 }) => {
 		>
 			{/* Desktop Layout */}
 			<div className="hidden sm:flex flex-row justify-center items-center h-full">
-				<div className="w-1/3 mx-4 font-semibold">{desc}</div>
+				<div className="w-1/3 mx-4 font-semibold flex justify-center items-center max-h-fit">
+					{desc}
+				</div>
 				<Helmet>
 					<link rel="preload" href={photo1} as="image" />
 					<link rel="preload" href={photo2} as="image" />
