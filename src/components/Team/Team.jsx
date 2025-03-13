@@ -190,7 +190,7 @@ const Team = () => {
 		},
 		{
 			imageSrc:
-				"https://res.cloudinary.com/dvclc1dpd/image/upload/v1741371406/IMG-20250301-WA0003_-_Mohit__Patil_FY23P072_ia8isx.jpg",
+				"https://res.cloudinary.com/dweebldig/image/upload/v1741865684/WhatsApp_Image_2025-03-13_at_15.20.02_4acf2b8d_mpanxu.jpg",
 			name: "Mohit Patil",
 			role: "Web Development Team",
 			github: "",
