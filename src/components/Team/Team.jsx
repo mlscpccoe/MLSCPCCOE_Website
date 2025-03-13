@@ -34,6 +34,16 @@ const Team = () => {
 		},
 		{
 			imageSrc:
+				"https://res.cloudinary.com/dcgb5c6y8/image/upload/v1741699114/revati.png",
+			name: "Revati Keskar",
+			role: "Sponsorship and Marketing Head",
+			github: "https://github.com/RevatiKeskar",
+			linkedin: "https://www.linkedin.com/in/revatikeskar",
+			color: "#ffba01",
+			rotation: Math.floor(Math.random() * (8 + 8 + 1)) - 8,
+		},
+		{
+			imageSrc:
 				"https://res.cloudinary.com/dcgb5c6y8/image/upload/v1741699698/pawan.jpg",
 			name: "Pawan Patil",
 			role: "Web Development Lead",
@@ -94,17 +104,7 @@ const Team = () => {
 		},
 		{
 			imageSrc:
-				"https://res.cloudinary.com/dcgb5c6y8/image/upload/v1741699114/revati.png",
-			name: "Revati Keskar",
-			role: "Sponsorship and Marketing Head",
-			github: "https://github.com/RevatiKeskar",
-			linkedin: "https://www.linkedin.com/in/revatikeskar",
-			color: "#ffba01",
-			rotation: Math.floor(Math.random() * (8 + 8 + 1)) - 8,
-		},
-		{
-			imageSrc:
-				"https://res.cloudinary.com/dcgb5c6y8/image/upload/v1741699953/kunal.jpg",
+				"https://res.cloudinary.com/dweebldig/image/upload/v1741864670/Screenshot_2025_0313_000511_1_zzzweq.jpg",
 			name: "Kunal Pawara",
 			role: "Media Lead",
 			github: "https://github.com/KunalPawara",
@@ -201,6 +201,16 @@ const Team = () => {
 		},
 		{
 			imageSrc:
+				"https://res.cloudinary.com/dweebldig/image/upload/v1741864465/WhatsApp_Image_2025-03-13_at_09.37.25_82a3c7ae_bviqy9.jpg",
+			name: "Keyura Motegaonkar ",
+			role: "AI/DS Team",
+			github: "",
+			linkedin: "linkedin.com/in/keyura-motegaonkar-50043a25a",
+			color: "#01a6f0",
+			rotation: Math.floor(Math.random() * (8 + 8 + 1)) - 8,
+		},
+		{
+			imageSrc:
 				"https://res.cloudinary.com/dvclc1dpd/image/upload/v1741368705/20241018_100141_-_117-Varad_Rane_deeowq.jpg",
 			name: "Varad Rane",
 			role: "AI/DS Team",
@@ -265,7 +275,7 @@ const Team = () => {
 
 		{
 			imageSrc:
-				"https://res.cloudinary.com/dvclc1dpd/image/upload/v1741371891/IMG_7201_-_SARTHAK_BAGDE_muedyh.png",
+				"https://res.cloudinary.com/dweebldig/image/upload/v1741864623/IMG_0893_1_bkcufg.jpg",
 			name: "Sarthak Bagde",
 			role: "Sponsorship and Marketing Team",
 			github: "",
