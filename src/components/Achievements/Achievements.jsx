@@ -32,7 +32,7 @@ const Achievements = () => {
 
 	return (
 		<div
-			className="relative w-full h-[165vh] bg-stone-950 max-sm:h-[210vh]"
+			className="relative w-full h-[195vh] bg-stone-950 max-md:h-[210vh]"
 			id="Achievements"
 		>
 			{/* Background text */}
