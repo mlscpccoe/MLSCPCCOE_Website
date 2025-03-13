@@ -31,10 +31,7 @@ const Achievements = () => {
 	]
 
 	return (
-		<div
-			className="relative w-full h-[195vh] bg-stone-950 max-md:h-[210vh]"
-			id="Achievements"
-		>
+		<div className="relative w-full h-fit bg-stone-950 pb-16" id="Achievements">
 			{/* Background text */}
 			<div className="absolute inset-0 opacity-[0.02] text-neutral-50 text-[8rem] font-bold tracking-wider overflow-hidden">
 				<div className="flex flex-wrap w-full h-full">
