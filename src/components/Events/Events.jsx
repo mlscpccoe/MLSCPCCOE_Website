@@ -12,7 +12,7 @@ const Events = () => {
 		{
 			name: "MLSC Techroom",
 			color: "#f34f1c",
-			desc: "The Microsoft Learn Student Chapter at PCCOE organized the Tech Room, providing students with an overview of key technical domains, including AI/ML, Web Development, and Competitive Programming. Mentors from each domain shared their expertise, highlighting the importance of practical knowledge and hands-on experience in mastering these areas. The session emphasized active participation, collaboration, and exposure to industry-standard tools and platforms.",
+			desc: "The Microsoft Learn Student Chapter at PCCOE hosted the Tech Room, offering students with an introduction to key technical domains, including AI/ML, Web Development, and Competitive Programming. Mentors from each domain shared their expertise, highlighting the importance of practical knowledge and hands-on experience in mastering these areas. The session emphasized active participation, collaboration, and exposure to industry-standard tools and platforms.",
 			photo1: "https://res.cloudinary.com/dcgb5c6y8/image/upload/v1741100322/mlscevents/techroom1.jpg",
 			photo2: "https://res.cloudinary.com/dcgb5c6y8/image/upload/v1741100322/mlscevents/techroom2.jpg",
 		}, // Orange
