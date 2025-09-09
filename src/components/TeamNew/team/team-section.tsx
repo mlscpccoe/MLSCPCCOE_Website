@@ -21,7 +21,7 @@ const TEAM = [
 	{
 		name: "Aaditya Deshpande",
 		role: "Event Management Head",
-		src: "https://res.cloudinary.com/dyricwenw/image/upload/v1756578631/IMG_20250128_153519_-_122_AADITYA_DESHPANDE_wpbjdj.jpg",
+		src: "https://res.cloudinary.com/dyricwenw/image/upload/v1757440857/IMG_20250128_153519_-_122_AADITYA_DESHPANDE_1_lp4nti.jpg",
 	},
 	{
 		name: "Smit Sawarkar",
@@ -46,7 +46,7 @@ const TEAM = [
 	{
 		name: "Nandkishor Vasi",
 		role: "Web Development Head",
-		src: "https://res.cloudinary.com/dyricwenw/image/upload/v1757343881/Picsart_25-08-28_23-25-02-491_1_acrc0j_1_ly6zw3.jpg",
+		src: "https://res.cloudinary.com/dyricwenw/image/upload/v1757440993/Picsart_25-08-28_23-25-02-491_1_acrc0j_1_1_pug9wk.jpg",
 		github: "https://github.com/nandkishor-vasi",
 		linkedin: "https://linkedin.com/in/nandkishor-vasi",
 	},
