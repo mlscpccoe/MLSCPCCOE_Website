@@ -38,16 +38,16 @@ export function TeamCard({
 			transition={{ duration: 0.8, ease: "easeOut" }}
 			viewport={{ once: true, amount: 0.3 }}
 		>
-			<div className="relative h-full w-full rounded-2xl bg-black">
+			<div className="relative h-full w-fullbg-black">
 				<img
 					src={src || "/placeholder.svg?height=360&width=320&query=portrait"}
 					alt={`${name} – ${role}`}
-					className="h-full w-full object-contain sm:object-cover transition duration-300 group-hover:scale-[1.02]"
+					className="h-full w-full object-contain sm:object-cover transition duration-300 group-hover:scale-[1.02]  rounded-2xl "
 					loading="lazy"
 					crossOrigin="anonymous"
 				/>
 
-				<div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+				<div className="pointer-events-none absolute inset-0 from-black/60 via-black/20 to-transparent" />
 
 				<div className="absolute inset-x-0 bottom-0 z-10" id="less_data">
 					<motion.div

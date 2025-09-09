@@ -1,5 +1,6 @@
 import React from "react"
 import { VerticalRoll } from "./vertical-roll"
+import MobileFocusRoll from "./MobileFocusRoll";
 
 function shuffleArray(array) {
 	const a = array.slice()
@@ -9,6 +10,8 @@ function shuffleArray(array) {
 	}
 	return a
 }
+
+
 const TEAM = [
 	{
 		name: "Mohit Patil",
@@ -61,6 +64,11 @@ const TEAM = [
 		name: "Adway Aghor",
 		role: "AI/DS Lead",
 		src: "https://res.cloudinary.com/dyricwenw/image/upload/v1756578631/Screenshot_20250727_001504_Gallery_-_038_Adway_Aghor_lgsjft.jpg",
+	},
+	{
+		name: "Prithviraj Desale",
+		role: "Competitive programming Head",
+		src: "",
 	},
 	{
 		name: "Rushikesh Nakhale",
@@ -195,20 +203,22 @@ export default function TeamSection() {
 											cardHeight={320}
 											gap={16}
 											direction={directions[idx]}
-											className="mx-auto max-w-[400px]"
+											className="mx-auto max-w-[600px]"
 										/>
 									</div>
 								))}
+								
 							</div>
 
 							<div className="lg:hidden">
-								<VerticalRoll
+								{/* <VerticalRoll
 									items={TEAM}
 									cardHeight={280}
 									gap={14}
 									direction="down"
 									className="mx-auto max-w-md"
-								/>
+								/> */}
+								<MobileFocusRoll items={TEAM} cardHeight={280} />
 							</div>
 						</>
 					)
