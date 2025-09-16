@@ -98,7 +98,7 @@ const TEAM = [
 	{
 		name: "Samarth Waghrulkar",
 		role: "Web Development Executive",
-		src: "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+		src: "https://res.cloudinary.com/dhqohpgir/image/upload/v1758042126/samarth_whiteformal_e1ey5b.jpg",
 	},
 	{
 		name: "Tanvi Jadhav",
