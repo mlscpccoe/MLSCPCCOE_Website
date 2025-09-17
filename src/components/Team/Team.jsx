@@ -200,11 +200,11 @@ const Team = () => {
 
 		{
 			imageSrc:
-				"",
-			name: "",
-			role: "Web Development Team",
-			github: "",
-			linkedin: "",
+				"https://res.cloudinary.com/dhqohpgir/image/upload/v1758042126/samarth_whiteformal_e1ey5b.jpg",
+			name: "Samarth Waghrulkar",
+			role: "Web Development Executive",
+			github: "https://github.com/Samarth-06",
+			linkedin: "www.linkedin.com/in/samarth-waghrulkar-46b854323",
 			color: "#ffba01",
 			rotation: Math.floor(Math.random() * (8 + 8 + 1)) - 8,
 		},
