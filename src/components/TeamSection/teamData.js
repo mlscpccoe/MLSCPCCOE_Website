@@ -418,7 +418,7 @@ export const teamData = {
     {
       imageSrc: "https://res.cloudinary.com/dyricwenw/image/upload/v1756493011/Narayan_Ratnaparkhe_-_172-NARAYAN_RATNAPARKHE_blenxw.jpg",
       name: "Narayan Ratnaparkhe",
-		role: "Competitive Programming Executive",
+		role: "CP Executive",
 		github: "https://github.com/Narayan-A-R",
 		linkedin: "https://www.linkedin.com/in/narayan-ratnaparkhe-12a93b30a/",
 
@@ -426,7 +426,7 @@ export const teamData = {
     {
       imageSrc: "https://res.cloudinary.com/dyricwenw/image/upload/v1756578631/Sanjana_Biyani_-_C042_Sanjana_Biyani_pn9hly.jpg",
       name: "Sanjana Biyani",
-		role: "Competitive Programming Executive",
+		role: "CP Executive",
 		github: "https://github.com/sanjana-991",
 		linkedin: "http://www.linkedin.com/in/sanjanabiyani",
 
@@ -492,6 +492,14 @@ export const teamData = {
 		role: "Sponsorship and Marketing Executive",
 		github: "https://github.com/MadhavK3",
 		linkedin: "https://in.linkedin.com/in/madhav-khobare-782a0432a",
+
+    },
+	{
+      imageSrc: "https://res.cloudinary.com/dyricwenw/image/upload/v1758736538/isha_-_ISHA_THAKUR_fg094c.jpg",
+      name: "Isha Thakur",
+		role: "Sponsorship and Marketing Executive",
+		github: "https://github.com/isha1296",
+		linkedin: "https://www.linkedin.com/in/isha-thakur-80229a2a0/",
 
     },
     {

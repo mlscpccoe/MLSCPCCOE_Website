@@ -41,10 +41,8 @@ export default function TeamPage() {
 					{members.map((member, index) => (
 						<div key={index} className="group relative perspective-1000">
 
-
-							
 							<div className="relative bg-gradient-to-br from-gray-900/95 via-gray-800/95 to-black/95 backdrop-blur-xl rounded-3xl p-8 border-2 border-gray-700/50 hover:border-gray-600/50
-								transform group-hover:rotateY-12 group-hover:rotateX-6 group-hover:scale-105 transition-all duration-700 preserve-3d">
+								transform group-hover:rotateY-12 group-hover:rotateX-6 group-hover:scale-105 transition-all duration-700 preserve-3d h-[500px]">
 
 								<div className="relative mb-8 transform group-hover:translateZ-20">
 									<div className="relative w-36 h-36 mx-auto mb-4">
@@ -69,7 +67,7 @@ export default function TeamPage() {
 								
 								<div className="text-center space-y-6 relative transform group-hover:translateZ-10">
 									<div className="relative">
-										<h3 className="text-[1.3rem]/[2.25rem] font-black bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent group-hover:bg-gradient-to-r group-hover:from-[rgb(1,166,240)] group-hover:via-white group-hover:to-[rgb(243,79,28)] transition-all duration-500 relative z-10">
+										<h3 className="text-[1.2rem]/[2.25rem] font-black bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent group-hover:bg-gradient-to-r group-hover:from-[rgb(1,166,240)] group-hover:via-white group-hover:to-[rgb(243,79,28)] transition-all duration-500 relative z-10">
 											{member.name}
 										</h3>
 										<h3 className="absolute top-0 left-0 w-full text-[1.3rem]/[2.25rem] font-black text-[rgb(1,166,240)]/30 transform translate-x-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 animate-pulse">
