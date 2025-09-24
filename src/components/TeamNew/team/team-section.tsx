@@ -236,7 +236,7 @@ const TEAM = [
 export default function TeamSection() {
 	const shuffledTeam = React.useMemo(() => shuffleArray(TEAM), [])
 	return (
-		<div className="relative isolate bg-black text-white" id="Team">
+		<div className="relative isolate bg-black text-white">
 			<div className="mx-auto grid grid-cols-1 gap-10 px-6 py-16 md:grid-cols-2 md:py-24 lg:gap-16">
 				<div className="md:sticky md:top-[22rem] md:self-start pl-2">
 					<h1 className="text-pretty text-5xl font-semibold leading-tight sm:text-6xl lg:text-7xl">
