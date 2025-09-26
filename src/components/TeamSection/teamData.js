@@ -271,7 +271,7 @@ export const teamData = {
       name: "Mohit Patil",
       role: "President",
       github: "/",
-      linkedin: "/",
+      linkedin: "https://www.linkedin.com/in/mohit-patil-632061289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       imageSrc: "https://res.cloudinary.com/dyricwenw/image/upload/v1757440857/IMG_20250128_153519_-_122_AADITYA_DESHPANDE_1_lp4nti.jpg",
@@ -344,11 +344,11 @@ export const teamData = {
 
     },
     {
-      imageSrc: "",
-      name: "Prithviraj Desale",
+      imageSrc: "https://res.cloudinary.com/dyricwenw/image/upload/v1758890740/IMG-20250730-WA0123_2_-_056_PRUTHVIRAJ_DESALE_i2ixec.jpg",
+      name: "Pruthviraj Desale",
 		role: "Competitive programming Head",
-		github: "/",
-		linkedin: "/",
+		github: "https://github.com/pruthviraj-desale",
+		linkedin: "https://www.linkedin.com/in/pruthviraj-desale",
 
     },
     {

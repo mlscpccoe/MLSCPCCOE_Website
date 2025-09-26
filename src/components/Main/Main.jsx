@@ -5,7 +5,6 @@ import Achievements from "../Achievements/Achievements"
 import Team from "../Team/Team"
 import Navbar from "../Navbar/Navbar"
 import Footer from "../Footer/Footer"
-import TeamNew from "../TeamNew/team/team-section"
 import TeamPage from "../TeamSection/TeamPage"
 import TeamMainPage from "../TeamSection/TeamMainPage"
 const MainContent = () => {
