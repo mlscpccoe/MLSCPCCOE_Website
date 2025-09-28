@@ -270,7 +270,7 @@ export const teamData = {
       imageSrc: "https://res.cloudinary.com/dyricwenw/image/upload/v1757430602/1000102853-Picsart-AiImageEnhancer_ohkzcp.jpg",
       name: "Mohit Patil",
       role: "President",
-      github: "/",
+	  github: "https://github.com/MohitPatil0965",
       linkedin: "https://www.linkedin.com/in/mohit-patil-632061289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
@@ -291,7 +291,6 @@ export const teamData = {
       imageSrc: "https://res.cloudinary.com/dyricwenw/image/upload/v1756493010/IMG-20250730-WA0117_3_-_TYETC175-BHUMIKA_NEHETE_rmxjip.jpg",
       name: "Bhumika Nehete",
 		role: "Sponsorship and Marketing Head",
-		github: "/",
 		linkedin: "https://www.linkedin.com/in/bhumikanehete/",
 
     },
@@ -307,7 +306,6 @@ export const teamData = {
       imageSrc: "https://res.cloudinary.com/dyricwenw/image/upload/v1756578630/formal_pic_-_SARTHAK_BAGDE_ab46yk.jpg",
       name: "Sarthak Bagde",
 		role: "Sponsorship and Marketing Lead",
-		github: "/",
 		linkedin: "http://www.linkedin.com/in/sarthakbagde",
 
     },
@@ -379,7 +377,6 @@ export const teamData = {
       imageSrc: "https://res.cloudinary.com/dyricwenw/image/upload/v1756578630/IMG-20231117-WA0080_-_A059_INDRANIL_KENEKAR_adqrfd.jpg",
       name: "Indranil Kenekar",
 		role: "Videography Head",
-		github: "/",
 		linkedin: "https://www.linkedin.com/in/indranil-kenekar-490550292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
 
     },
@@ -458,7 +455,7 @@ export const teamData = {
     {
       imageSrc: "https://res.cloudinary.com/dyricwenw/image/upload/v1756578631/Sumaira_Mulla_-_Sumaira_Mulla_lzkypn.png",
       name: "Sumaira Mulla",
-		role: "Design Executive",
+		role: "Design and Media Executive",
 		github: "https://github.com/sumairamulla07",
 		linkedin: "https://www.linkedin.com/in/sumaira-m-523588313/",
 
