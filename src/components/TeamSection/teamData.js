@@ -288,6 +288,13 @@ export const teamData = {
       linkedin: "http://www.linkedin.com/in/smitsawarkar"
     },
     {
+      imageSrc: "https://res.cloudinary.com/dyricwenw/image/upload/v1759064798/Ananya_Gawade_-_ANANYA_GAWADE_of3gbm.jpg",
+      name: "Ananya Gawade ",
+      role: "Accounts and Finance Head",
+      github: "https://github.com/AnanyaGawade",
+      linkedin: "http://www.linkedin.com/in/ananya-gawade"
+    },
+    {
       imageSrc: "https://res.cloudinary.com/dyricwenw/image/upload/v1756493010/IMG-20250730-WA0117_3_-_TYETC175-BHUMIKA_NEHETE_rmxjip.jpg",
       name: "Bhumika Nehete",
 		role: "Sponsorship and Marketing Head",
