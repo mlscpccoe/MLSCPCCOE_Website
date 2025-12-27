@@ -10,21 +10,34 @@ const Events = () => {
 
 	const events = [
 		{
-			name: "MLSC Techroom",
+			name: "Techroom 2024",
 			color: "#f34f1c",
 			desc: "The Microsoft Learn Student Chapter at PCCOE hosted the Tech Room, offering students with an introduction to key technical domains, including AI/ML, Web Development, and Competitive Programming. Mentors from each domain shared their expertise, highlighting the importance of practical knowledge and hands-on experience in mastering these areas. The session emphasized active participation, collaboration, and exposure to industry-standard tools and platforms.",
 			photo1: "https://res.cloudinary.com/dcgb5c6y8/image/upload/v1741100322/mlscevents/techroom1.jpg",
 			photo2: "https://res.cloudinary.com/dcgb5c6y8/image/upload/v1741100322/mlscevents/techroom2.jpg",
 		}, // Orange
 		{
-			name: "MLSC Speaker Session",
+			name: "Speaker Session",
 			color: "#7fbc00",
 			desc: "The Microsoft Learn Student Chapter at PCCOE organized an impactful speaker event, featuring Aakash Sangamnerkar, a Microsoft professional and PCCOE alumnus. The event provided students with valuable industry insights, focusing on placement strategies, interview preparation, and soft skills development. It also marked the inauguration of the MLSC, emphasizing its role in fostering learning and growth for students.",
 			photo1: "https://res.cloudinary.com/dcgb5c6y8/image/upload/v1741100322/mlscevents/speaker1.jpg",
 			photo2: "https://res.cloudinary.com/dcgb5c6y8/image/upload/v1741100322/mlscevents/speaker2.jpg",
 		}, // Green
-		// { name: "Annual Summit", color: "#ffba01" }, // Yellow
-		// { name: "Hackathon", color: "#01a6f0" }, // Blue
+
+		{ 
+			name: "Techroom 2025", 
+			color: "#ffba01",
+			desc:"The Microsoft Learn Student Chapter at PCCOE returned with Techroom, an initiative aimed at strengthening students’ understanding of AI/ML, Web Development, and Competitive Programming. Building on past success, the session emphasized structured mentor-led discussions and interactive learning experiences, encouraging hands-on practice, collaboration, and exposure to industry-grade tools and technologies",
+			photo1:"https://res.cloudinary.com/dyricwenw/image/upload/v1766687482/Techroom2025_02_ywzytd.jpg",
+			photo2:"https://res.cloudinary.com/dyricwenw/image/upload/v1766687480/Techroom2025_artcrx.jpg"
+		}, // Yellow
+		{ 
+			name: "Logic Building Session", 
+			color: "#01a6f0",
+			desc:"The Microsoft Learn Student Chapter at PCCOE organized an logic building session aimed at guiding students in their competitive programming journey. The session was conducted by Mr. Siddhesh Patil, who shared valuable insights into the fundamentals of competitive programming, choosing the right programming languages and platforms, effective practice strategies and useful resources.",
+			photo1:"https://res.cloudinary.com/dyricwenw/image/upload/v1766687978/LogicBuilding_1_rd9myb.jpg",
+			photo2:"https://res.cloudinary.com/dyricwenw/image/upload/v1766687799/LogicBuilding_02_m3pfgt.jpg"
+		 }, // Blue
 	]
 
 	const nextCard = () => {
