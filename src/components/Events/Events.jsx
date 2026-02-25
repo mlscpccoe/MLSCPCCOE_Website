@@ -38,6 +38,13 @@ const Events = () => {
 			photo1:"https://res.cloudinary.com/dyricwenw/image/upload/v1766687978/LogicBuilding_1_rd9myb.jpg",
 			photo2:"https://res.cloudinary.com/dyricwenw/image/upload/v1766687799/LogicBuilding_02_m3pfgt.jpg"
 		 }, // Blue
+		 { 
+			name: "Praxis 2026", 
+			color: "#f34f1c",
+			desc:"The PRAXIS – MINDSCAPE event commenced successfully with enthusiastic participation from competing teams. The event features four competitive rounds: Tech Quiz (Elimination Round), Debug Sprint (Web Development), AI Innovation Challenge, and Progressive Competitive Programming. Participants demonstrated strong technical expertise, analytical thinking, and problem-solving capabilities throughout the competition",
+			photo1:"https://res.cloudinary.com/dyricwenw/image/upload/v1772031361/WhatsApp_Image_2026-02-25_at_8.24.32_PM_erztb7.jpg",
+			photo2:"https://res.cloudinary.com/dyricwenw/image/upload/v1772031361/WhatsApp_Image_2026-02-25_at_8.24.33_PM_yuqgwy.jpg"
+		 }, // Orange
 	]
 
 	const nextCard = () => {
