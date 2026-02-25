@@ -24,38 +24,41 @@ const Events = () => {
 			photo2: "https://res.cloudinary.com/dcgb5c6y8/image/upload/v1741100322/mlscevents/speaker2.jpg",
 		}, // Green
 
-		{ 
-			name: "Techroom 2025", 
+		{
+			name: "Techroom 2025",
 			color: "#ffba01",
-			desc:"The Microsoft Learn Student Chapter at PCCOE returned with Techroom, an initiative aimed at strengthening students’ understanding of AI/ML, Web Development, and Competitive Programming. Building on past success, the session emphasized structured mentor-led discussions and interactive learning experiences, encouraging hands-on practice, collaboration, and exposure to industry-grade tools and technologies",
-			photo1:"https://res.cloudinary.com/dyricwenw/image/upload/v1766687482/Techroom2025_02_ywzytd.jpg",
-			photo2:"https://res.cloudinary.com/dyricwenw/image/upload/v1766687480/Techroom2025_artcrx.jpg"
+			desc: "The Microsoft Learn Student Chapter at PCCOE returned with Techroom, an initiative aimed at strengthening students’ understanding of AI/ML, Web Development, and Competitive Programming. Building on past success, the session emphasized structured mentor-led discussions and interactive learning experiences, encouraging hands-on practice, collaboration, and exposure to industry-grade tools and technologies",
+			photo1: "https://res.cloudinary.com/dyricwenw/image/upload/v1766687482/Techroom2025_02_ywzytd.jpg",
+			photo2: "https://res.cloudinary.com/dyricwenw/image/upload/v1766687480/Techroom2025_artcrx.jpg",
 		}, // Yellow
-		{ 
-			name: "Logic Building Session", 
+		{
+			name: "Logic Building Session",
 			color: "#01a6f0",
-			desc:"The Microsoft Learn Student Chapter at PCCOE organized an logic building session aimed at guiding students in their competitive programming journey. The session was conducted by Mr. Siddhesh Patil, who shared valuable insights into the fundamentals of competitive programming, choosing the right programming languages and platforms, effective practice strategies and useful resources.",
-			photo1:"https://res.cloudinary.com/dyricwenw/image/upload/v1766687978/LogicBuilding_1_rd9myb.jpg",
-			photo2:"https://res.cloudinary.com/dyricwenw/image/upload/v1766687799/LogicBuilding_02_m3pfgt.jpg"
-		 }, // Blue
-		 { 
-			name: "Praxis 2026", 
+			desc: "The Microsoft Learn Student Chapter at PCCOE organized an logic building session aimed at guiding students in their competitive programming journey. The session was conducted by Mr. Siddhesh Patil, who shared valuable insights into the fundamentals of competitive programming, choosing the right programming languages and platforms, effective practice strategies and useful resources.",
+			photo1: "https://res.cloudinary.com/dyricwenw/image/upload/v1766687978/LogicBuilding_1_rd9myb.jpg",
+			photo2: "https://res.cloudinary.com/dyricwenw/image/upload/v1766687799/LogicBuilding_02_m3pfgt.jpg",
+		}, // Blue
+		{
+			name: "Praxis 2026",
 			color: "#f34f1c",
-			desc:"The PRAXIS – MINDSCAPE event commenced successfully with enthusiastic participation from competing teams. The event features four competitive rounds: Tech Quiz (Elimination Round), Debug Sprint (Web Development), AI Innovation Challenge, and Progressive Competitive Programming. Participants demonstrated strong technical expertise, analytical thinking, and problem-solving capabilities throughout the competition",
-			photo1:"https://res.cloudinary.com/dyricwenw/image/upload/v1772031361/WhatsApp_Image_2026-02-25_at_8.24.32_PM_erztb7.jpg",
-			photo2:"https://res.cloudinary.com/dyricwenw/image/upload/v1772031361/WhatsApp_Image_2026-02-25_at_8.24.33_PM_yuqgwy.jpg"
-		 }, // Orange
+			desc: "The PRAXIS – MINDSCAPE event commenced successfully with enthusiastic participation from competing teams. The event features four competitive rounds: Tech Quiz (Elimination Round), Debug Sprint (Web Development), AI Innovation Challenge, and Progressive Competitive Programming. Participants demonstrated strong technical expertise, analytical thinking, and problem-solving capabilities throughout the competition",
+			photo1: "https://res.cloudinary.com/dyricwenw/image/upload/v1772031361/WhatsApp_Image_2026-02-25_at_8.24.32_PM_erztb7.jpg",
+			photo2: "https://res.cloudinary.com/dyricwenw/image/upload/v1772031361/WhatsApp_Image_2026-02-25_at_8.24.33_PM_yuqgwy.jpg",
+		}, // Orange
 	]
-
+	const liveEvent = {
+		name: "BlueBit National Level Hackathon",
+		link: "https://unstop.com/o/bZLlxtJ?lb=R4QnuuJ3&utm_medium=Share&utm_source=online_coding_challenge&utm_campaign=Nandkvas3785",
+	}
 	const nextCard = () => {
 		setCurrentIndex((prevIndex) =>
-			prevIndex === events.length - 1 ? 0 : prevIndex + 1
+			prevIndex === events.length - 1 ? 0 : prevIndex + 1,
 		)
 	}
 
 	const prevCard = () => {
 		setCurrentIndex((prevIndex) =>
-			prevIndex === 0 ? events.length - 1 : prevIndex - 1
+			prevIndex === 0 ? events.length - 1 : prevIndex - 1,
 		)
 	}
 
@@ -67,6 +70,24 @@ const Events = () => {
 				</div>
 
 				<div className="relative w-full h-[60vh] flex items-center justify-center">
+					<div className=" hidden md:block	absolute top-10 right-10 w-[200px] bg-red-600 text-white px-6 py-4 rounded-xl shadow-lg animate-pulse z-50">
+						<div className="flex items-center gap-2">
+							<span className="font-bold">LIVE NOW</span>
+						</div>
+
+						<div className="mt-2 font-semibold break-words">
+							{liveEvent.name}
+						</div>
+
+						<a
+							href={liveEvent.link}
+							target="_blank"
+							className="mt-3 inline-block w-full text-center bg-white text-red-600 px-4 py-2 rounded-lg font-bold hover:scale-105 transition"
+						>
+							Register Now
+						</a>
+					</div>
+
 					<AnimatePresence mode="wait">
 						<motion.div
 							key={currentIndex}
