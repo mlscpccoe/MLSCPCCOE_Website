@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Events Roadmap — Microsoft Learn Student Chapter</title>
+  <meta name="description"
+    content="The MLSC PCCOE event roadmap: Inauguration, Tech Room, Praxis, Datathon, Code Sprint and the Bluebit Hackathon." />
+  <meta property="og:title" content="Events Roadmap — MLSC PCCOE" />
+  <meta property="og:description" content="Six milestones, one path. Walk the MLSC PCCOE event journey." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+  <link rel="icon" href="assets/images/branding/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/events.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <!-- Lenis Smooth Scroll (Parity with Home and Achievements) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css">
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <!-- GSAP & ScrollTrigger for high-performance animation syncing -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Pinned Glassmorphism Navbar (Matches Home & Achievements) -->
+  <header class="glass-navbar navbar-fixed" id="glass-navbar" aria-label="Main Navigation">
+    <nav class="glass-nav-container">
+      <a href="index.html#hero" class="glass-nav-brand" aria-label="MLSC Home">
+        <svg class="mlsc-logo-icon nav-logo-icon" width="28" height="18" viewBox="0 0 43 28" fill="none"
+          xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Top row: col 2 (Orange), col 3 (Green) -->
+          <rect x="15" y="0" width="13" height="13" rx="1.5" fill="#F25022" class="mlsc-sq mlsc-sq-orange" />
+          <rect x="30" y="0" width="13" height="13" rx="1.5" fill="#7FBA00" class="mlsc-sq mlsc-sq-green" />
+          <!-- Bottom row: col 1 (Blue), col 2 (Yellow) -->
+          <rect x="0" y="15" width="13" height="13" rx="1.5" fill="#00A4EF" class="mlsc-sq mlsc-sq-blue" />
+          <rect x="15" y="15" width="13" height="13" rx="1.5" fill="#FFB900" class="mlsc-sq mlsc-sq-yellow" />
+        </svg>
+        <span class="nav-brand-text"><span class="letter-m">M</span><span class="letter-l">L</span><span
+            class="letter-s">S</span><span class="letter-c">C</span></span>
+      </a>
+      <div class="glass-nav-links">
+        <a href="index.html#hero" class="glass-nav-link">Home</a>
+        <a href="events.html" class="glass-nav-link active">Events</a>
+        <a href="teams.html" class="glass-nav-link">Teams</a>
+        <a href="achievements.html" class="glass-nav-link">Achievements</a>
+        <a href="games.html" class="glass-nav-link">Games</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SECTION 1: HERO VIEWPORT (100vh Full Viewport) -->
+    <section class="events-hero-section" id="events-hero" aria-label="Event Journey Hero">
+      <div class="event-glow" style="background: var(--ms-green, #7fba00);" aria-hidden="true"></div>
+      <div class="roadmap-hero-content">
+        <h1 class="roadmap-title">Where Ideas Turn Into <span class="events-gradient-text">Impact</span></h1>
+        <p class="roadmap-copy">Explore the events, challenges, and experiences that bring the MLSC community together.</p>
+      </div>
+
+      <div class="belt" data-belt>
+        <div class="belt-track">
+          <span class="belt-item">MLSC Inauguration<span class="belt-dot"></span></span>
+          <span class="belt-item">Techroom<span class="belt-dot"></span></span>
+          <span class="belt-item">PRAXIS<span class="belt-dot"></span></span>
+          <span class="belt-item">Datathon<span class="belt-dot"></span></span>
+          <span class="belt-item">Codesprint<span class="belt-dot"></span></span>
+          <span class="belt-item">BlueBit 2.0<span class="belt-dot"></span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: THE INTERACTIVE ROADMAP TRACK (GSAP + Lenis Synchronized) -->
+    <section class="events-roadmap-section" id="events-track" aria-label="Interactive Event Journey Roadmap">
+      <div class="roadmap-track-container" id="roadmap-track-container">
+        
+        <!-- Vector Road Path Surface -->
+        <svg class="roadmap-svg" viewBox="0 0 1000 1600" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="roadGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#00a4ef" />
+              <stop offset="25%" stop-color="#7fba00" />
+              <stop offset="55%" stop-color="#ffb900" />
+              <stop offset="85%" stop-color="#f25022" />
+              <stop offset="100%" stop-color="#00a4ef" />
+            </linearGradient>
+            <filter id="roadGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="3" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+
+          <!-- Road Bed Foundation -->
+          <path class="road-bed"
+            d="M 250 140 C 250 260, 750 300, 750 420 C 750 540, 250 580, 250 700 C 250 820, 750 860, 750 980 C 750 1100, 250 1140, 250 1260 C 250 1380, 750 1420, 750 1540"
+            fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="22" stroke-linecap="round"
+            vector-effect="non-scaling-stroke" />
+
+          <!-- Road Rails / Borders -->
+          <path class="road-rails"
+            d="M 250 140 C 250 260, 750 300, 750 420 C 750 540, 250 580, 250 700 C 250 820, 750 860, 750 980 C 750 1100, 250 1140, 250 1260 C 250 1380, 750 1420, 750 1540"
+            fill="none" stroke="rgba(255, 255, 255, 0.12)" stroke-width="12" stroke-linecap="round"
+            vector-effect="non-scaling-stroke" />
+
+          <!-- Road Inner Core (Pure Dark Void) -->
+          <path class="road-core"
+            d="M 250 140 C 250 260, 750 300, 750 420 C 750 540, 250 580, 250 700 C 250 820, 750 860, 750 980 C 750 1100, 250 1140, 250 1260 C 250 1380, 750 1420, 750 1540"
+            fill="none" stroke="#000000" stroke-width="7" stroke-linecap="round"
+            vector-effect="non-scaling-stroke" />
+
+          <!-- Active Highway Dash / Energy Line -->
+          <path id="roadmapActivePath" class="road-energy"
+            d="M 250 140 C 250 260, 750 300, 750 420 C 750 540, 250 580, 250 700 C 250 820, 750 860, 750 980 C 750 1100, 250 1140, 250 1260 C 250 1380, 750 1420, 750 1540"
+            fill="none" stroke="url(#roadGradient)" stroke-width="2.5" stroke-linecap="round"
+            stroke-dasharray="10 14" filter="url(#roadGlow)" vector-effect="non-scaling-stroke" />
+        </svg>
+
+        <!-- The Flying Mascot (Driven smoothly by GSAP ScrollTrigger) -->
+        <div class="guide-mascot" id="guide-mascot" aria-hidden="true">
+          <div class="mascot-flight-inner">
+            <img src="assets/images/event-mascots/Brie-flying.png" alt="" width="1024" height="1024" />
+          </div>
+        </div>
+
+        <!-- 6 Interactive Milestone Stations -->
+
+        <!-- STATION 01 -->
+        <a href="events/mlsc-inauguration.html" class="roadmap-station" data-station="1"
+          style="left: 25%; top: 8.75%; --station-accent: var(--ms-blue);">
+          <div class="station-hub glass">
+            <span class="station-num">01</span>
+            <img src="assets/images/event-mascots/Brie-inaugaration.png" alt="MLSC Inauguration mascot" width="1024" height="1024" loading="lazy" />
+          </div>
+          <div class="station-card glass">
+            <div class="station-card-title">MLSC Inauguration</div>
+            <div class="station-card-tag">A new chapter of innovation begins.</div>
+            <div class="station-card-cta">Explore story →</div>
+          </div>
+        </a>
+
+        <!-- STATION 02 -->
+        <a href="events/tech-room.html" class="roadmap-station" data-station="2"
+          style="left: 75%; top: 26.25%; --station-accent: var(--ms-green);">
+          <div class="station-hub glass">
+            <span class="station-num">02</span>
+            <img src="assets/images/event-mascots/Brie-Techroom.png" alt="Techroom mascot" width="1024" height="1024" loading="lazy" />
+          </div>
+          <div class="station-card glass">
+            <div class="station-card-title">Techroom</div>
+            <div class="station-card-tag">Connect, learn, and explore emerging technology.</div>
+            <div class="station-card-cta">Explore story →</div>
+          </div>
+        </a>
+
+        <!-- STATION 03 -->
+        <a href="events/praxis.html" class="roadmap-station" data-station="3"
+          style="left: 25%; top: 43.75%; --station-accent: var(--ms-yellow);">
+          <div class="station-hub glass">
+            <span class="station-num">03</span>
+            <img src="assets/images/event-mascots/Brie-Praxis.png" alt="PRAXIS mascot" width="1024" height="1024" loading="lazy" />
+          </div>
+          <div class="station-card glass">
+            <div class="station-card-title">PRAXIS</div>
+            <div class="station-card-tag">Challenge your skills. Think. Build. Compete.</div>
+            <div class="station-card-cta">Explore story →</div>
+          </div>
+        </a>
+
+        <!-- STATION 04 -->
+        <a href="events/datathon.html" class="roadmap-station" data-station="4"
+          style="left: 75%; top: 61.25%; --station-accent: var(--ms-red);">
+          <div class="station-hub glass">
+            <span class="station-num">04</span>
+            <img src="assets/images/event-mascots/Brie-Datathon.png" alt="Datathon mascot" width="1024" height="1024" loading="lazy" />
+          </div>
+          <div class="station-card glass">
+            <div class="station-card-title">Datathon</div>
+            <div class="station-card-tag">Turn data into insights and ideas into solutions.</div>
+            <div class="station-card-cta">Explore story →</div>
+          </div>
+        </a>
+
+        <!-- STATION 05 -->
+        <a href="events/code-sprint.html" class="roadmap-station" data-station="5"
+          style="left: 25%; top: 78.75%; --station-accent: var(--ms-green);">
+          <div class="station-hub glass">
+            <span class="station-num">05</span>
+            <img src="assets/images/event-mascots/Brie-Codesprint.png" alt="Codesprint mascot" width="1024" height="1024" loading="lazy" />
+          </div>
+          <div class="station-card glass">
+            <div class="station-card-title">Codesprint</div>
+            <div class="station-card-tag">Code fast. Think sharp. Solve smarter.</div>
+            <div class="station-card-cta">Explore story →</div>
+          </div>
+        </a>
+
+        <!-- STATION 06 -->
+        <a href="events/bluebit-hackathon.html" class="roadmap-station" data-station="6"
+          style="left: 75%; top: 96.25%; --station-accent: var(--ms-blue);">
+          <div class="station-hub glass">
+            <span class="station-num">06</span>
+            <img src="assets/images/event-mascots/Brie-Bluebit.png" alt="BlueBit 2.0 mascot" width="1024" height="1024" loading="lazy" />
+          </div>
+          <div class="station-card glass">
+            <div class="station-card-title">BlueBit 2.0</div>
+            <div class="station-card-tag">Our flagship celebration of technology and innovation.</div>
+            <div class="station-card-cta">Explore story →</div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: FOOTER (Populated dynamically by js/footer.js) -->
+    <footer class="site-footer" id="footer" aria-label="Site Footer"></footer>
+  </main>
+
+  <script src="js/footer.js"></script>
+  <script src="js/events.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
